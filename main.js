@@ -56,8 +56,14 @@ function displayShowGIFS() {
         renderButtons(); //re-render the buttons
       });
     
+
     // handles what happens when someone clicks a show title button (runs the ajax function)
     $(document).on("click", ".show", displayShowGIFS);
+
+    $("#clear").on("click",function(event2){
+        event2.preventDefault();
+        $("#gifs-display").empty();
+    })
     
       renderButtons(); //call render buttons to have some default buttons displayed when the page loads
     });
