@@ -10,7 +10,7 @@ function displayShowGIFS() {
     show=show.replace(/ /g,"_"); //replace spaces in the name with underscores (the API needs this)
     var limit = 10; //how many gifs to display 
     var apiKey = "dc6zaTOxFJmzC"; // my API key
-    var queryURL = `http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${show}&limit=${limit}&lang=en`; // query URL to use
+    var queryURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${show}&limit=${limit}&lang=en`; // query URL to use
 
     console.log(`using URL ${queryURL}`)
 
