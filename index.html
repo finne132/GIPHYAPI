@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TV Show GIFS</title>
+  <!--get jQuery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--get fontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- get bootstrap css -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <!-- get local js file -->
+  <script src="main.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>TV Show GIPHY API Search</h1>
+    <!-- GIFS will get dumped here -->
+    <div id="gifs-view"></div>
+    <form id="gif-form">
+      <label for="show-input">Add Show</label>
+      <input type="text" id="show-input"><br>
+      <!-- Button that triggers new subtopics to be added -->
+      <input id="add-show" type="submit" value="Add Show">
+    </form>
+      
+  </div>
+</body>
+
+</html>
